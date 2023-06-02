@@ -43,7 +43,17 @@ for(let i=0; i<team.length; i++){
 const info = document.getElementById("info");
 
 for(let i=0; i<team.length; i++){
-   info.innerHTML += `<img src="./img/${team[i].image}"><br>`;
-   info.innerHTML += team[i].name+'<br>';
-   info.innerHTML += team[i].role+'<br><br>'
+   //info.innerHTML += `<img src="./img/${team[i].image}"><br>`;
+   //info.innerHTML += team[i].name+'<br>';
+   //info.innerHTML += team[i].role+'<br><br>';
+   let member = team[i];
+
+   let card = ` <div class="card card-css">
+                    <img src="./img/${member.image}" class="card-img-top" alt="${member.name}">
+                    <div class="card-body">
+                        <h5 class="card-title name-font">${member.name}</h5>
+                        <p class="card-text">${member.role}</p>
+                    </div>
+                </div>`;
+    info.innerHTML += card
 }

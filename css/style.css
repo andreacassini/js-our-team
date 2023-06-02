@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(243, 243, 243);
+    font-family: 'Poppins', sans-serif;
+    color: rgb(77, 77, 77);
+}
+.card-css{
+    border: 0;
+    margin: 1.3rem 1rem;
+    color: rgb(77, 77, 77);
+}
+
+.name-font{
+    font-family: 'Playfair Display', serif;
+}
+
+.title{
+    font-size: 15px;
+    line-height: 2;
+}
+
+h1{
+    font-size: 30px;
+}
